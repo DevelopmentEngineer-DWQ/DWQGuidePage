@@ -58,9 +58,9 @@
 //    _dwqLaunch.dwqAdLocalImgName = @"DWQAd.png";
     
 #pragma mark-dwq -新手向导
-            _dwqLaunch = [[DWQLaunchVC alloc]initWithRootVC:dwqVC withLaunchType:DWQLaunchGuide];
-            //本地
-           _dwqLaunch.dwqGuideImgNameArr = @[@"DWQGuide01.jpeg",@"DWQGuide02.jpeg",@"DWQGuide03.jpeg"];
+//            _dwqLaunch = [[DWQLaunchVC alloc]initWithRootVC:dwqVC withLaunchType:DWQLaunchGuide];
+//            //本地
+//           _dwqLaunch.dwqGuideImgNameArr = @[@"DWQGuide01.jpeg",@"DWQGuide02.jpeg",@"DWQGuide03.jpeg"];
 //            //网络
 //           _dwqLaunch.dwqGuideImgUrlArr = @[@"https://a-ssl.duitang.com/uploads/item/201409/05/20140905150403_N8J8Z.thumb.700_0.jpeg",@"https://a-ssl.duitang.com/uploads/item/201508/02/20150802181000_mYurv.jpeg"];
     
@@ -94,18 +94,18 @@
     self.window.rootViewController = _dwqLaunch;
     
 #pragma mark-dwq -引导页
-        //_dwqCoverImgNameArr = @[@"学无止境.png", @"求知若渴.png", @"学海无涯.png"];
+        _dwqCoverImgNameArr = @[@"学无止境.png", @"求知若渴.png", @"学海无涯.png"];
         /*使用浮层时候需要将上方这个打开*/
     
     
-        _dwqBgImgNameArr = @[@"DWQGuid01.jpeg", @"DWQGuid02.jpeg", @"DWQGuid03.jpeg"];
+        _dwqBgImgNameArr = @[@"dwq01.jpeg", @"dwq02.jpeg", @"dwq03.jpeg"];
         /*分别为:normalGuid,      传统引导页
                 guidWithCover,   带有浮层的引导页
                 coverWithCustom, 可在浮层中添加自定义控件
                 videoGuid,       视频引导页
            videoGuidWithCustom   视频可以自定义浮层的
          */
-        _dwqIntroductionPage = [self normalGuid];
+        _dwqIntroductionPage = [self videoGuid];
     
         self.window.rootViewController = dwqVC;//只用引导页的时候打开此项
         [self.window addSubview:_dwqIntroductionPage.view];
@@ -172,9 +172,9 @@
     //浮层中自定义添加空间
     [dwqPage.dwqPageArr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         UIImageView * imgView = obj;
-        NSArray * textArr = @[@"希望大家能够喜欢~",@"进去给个star哦~"];
+        NSArray * textArr = @[@"hello,我是杜文全~",@"希望大家能够喜欢~",@"进去给个star哦~"];
         UILabel * lable1 = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 50)];
-        lable1.center = CGPointMake([UIScreen mainScreen].bounds.size.width/2,100);
+        lable1.center = CGPointMake([UIScreen mainScreen].bounds.size.width/2,130);
         lable1.text = textArr[idx];
         lable1.textAlignment = NSTextAlignmentCenter;
         lable1.textColor = [UIColor blackColor];
@@ -185,9 +185,9 @@
 
 //视频
 - (DWQIntroductionPage *)videoGuid{
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"DWQVideo" ofType:@"mp4"];
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"DWQVideo1" ofType:@"mp4"];
     NSLog(@"路径:%@",[NSBundle mainBundle]);
-    
+    //NSBundle </var/containers/Bundle/Application/38262A52-3F93-400A-AD21-B441B2BAF652/DWQGuidePage.app> (loaded)
     _dwqVideoUrl = [NSURL fileURLWithPath:filePath];
     DWQIntroductionPage * dwqPage = [[DWQIntroductionPage alloc]init];
     dwqPage.dwqVideoUrl = _dwqVideoUrl;

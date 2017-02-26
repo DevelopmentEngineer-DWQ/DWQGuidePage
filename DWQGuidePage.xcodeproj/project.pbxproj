@@ -41,6 +41,10 @@
 		04CFD35D1E601258002C67A1 /* DWQGuid03.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 04CFD3591E601258002C67A1 /* DWQGuid03.jpeg */; };
 		04CFD3601E6015A2002C67A1 /* DWQRoll.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 04CFD35F1E6015A2002C67A1 /* DWQRoll.jpeg */; };
 		04CFD3621E6015FF002C67A1 /* DWQLaunchImg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 04CFD3611E6015FF002C67A1 /* DWQLaunchImg.jpeg */; };
+		04CFD36E1E605CB9002C67A1 /* dwq01.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 04CFD36B1E605CB9002C67A1 /* dwq01.jpeg */; };
+		04CFD36F1E605CB9002C67A1 /* dwq02.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 04CFD36C1E605CB9002C67A1 /* dwq02.jpeg */; };
+		04CFD3701E605CB9002C67A1 /* dwq03.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 04CFD36D1E605CB9002C67A1 /* dwq03.jpeg */; };
+		04CFD3721E6065F2002C67A1 /* DWQVideo1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 04CFD3711E6064B5002C67A1 /* DWQVideo1.mp4 */; };
 		04F72C241E5D21C500B8BAAF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F72C231E5D21C500B8BAAF /* main.m */; };
 		04F72C271E5D21C500B8BAAF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F72C261E5D21C500B8BAAF /* AppDelegate.m */; };
 		04F72C2A1E5D21C500B8BAAF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F72C291E5D21C500B8BAAF /* ViewController.m */; };
@@ -122,6 +126,10 @@
 		04CFD3591E601258002C67A1 /* DWQGuid03.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DWQGuid03.jpeg; sourceTree = "<group>"; };
 		04CFD35F1E6015A2002C67A1 /* DWQRoll.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DWQRoll.jpeg; sourceTree = "<group>"; };
 		04CFD3611E6015FF002C67A1 /* DWQLaunchImg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DWQLaunchImg.jpeg; sourceTree = "<group>"; };
+		04CFD36B1E605CB9002C67A1 /* dwq01.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dwq01.jpeg; sourceTree = "<group>"; };
+		04CFD36C1E605CB9002C67A1 /* dwq02.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dwq02.jpeg; sourceTree = "<group>"; };
+		04CFD36D1E605CB9002C67A1 /* dwq03.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dwq03.jpeg; sourceTree = "<group>"; };
+		04CFD3711E6064B5002C67A1 /* DWQVideo1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = DWQVideo1.mp4; sourceTree = "<group>"; };
 		04F72C1F1E5D21C500B8BAAF /* DWQGuidePage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DWQGuidePage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F72C231E5D21C500B8BAAF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04F72C251E5D21C500B8BAAF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -176,6 +184,9 @@
 		04CFD1E11E5F013F002C67A1 /* DWQimages */ = {
 			isa = PBXGroup;
 			children = (
+				04CFD36B1E605CB9002C67A1 /* dwq01.jpeg */,
+				04CFD36C1E605CB9002C67A1 /* dwq02.jpeg */,
+				04CFD36D1E605CB9002C67A1 /* dwq03.jpeg */,
 				04CFD3571E601258002C67A1 /* DWQGuid01.jpeg */,
 				04CFD3581E601258002C67A1 /* DWQGuid02.jpeg */,
 				04CFD3591E601258002C67A1 /* DWQGuid03.jpeg */,
@@ -194,6 +205,7 @@
 				04CFD3531E600EC3002C67A1 /* 杜文全背景.png */,
 				04CFD35F1E6015A2002C67A1 /* DWQRoll.jpeg */,
 				04CFD1F81E5F013F002C67A1 /* DWQVideo.mp4 */,
+				04CFD3711E6064B5002C67A1 /* DWQVideo1.mp4 */,
 			);
 			path = DWQimages;
 			sourceTree = "<group>";
@@ -449,6 +461,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04CFD3721E6065F2002C67A1 /* DWQVideo1.mp4 in Resources */,
 				04CFD34B1E6005A8002C67A1 /* 学无止境@3x.png in Resources */,
 				04CFD35D1E601258002C67A1 /* DWQGuid03.jpeg in Resources */,
 				04CFD2091E5F013F002C67A1 /* DWQEnter@2x.png in Resources */,
@@ -457,9 +470,12 @@
 				04CFD3521E600AF1002C67A1 /* DWQ03.gif in Resources */,
 				04F72C321E5D21C500B8BAAF /* LaunchScreen.storyboard in Resources */,
 				04CFD3621E6015FF002C67A1 /* DWQLaunchImg.jpeg in Resources */,
+				04CFD3701E605CB9002C67A1 /* dwq03.jpeg in Resources */,
 				04CFD3511E600AF1002C67A1 /* DWQ02.gif in Resources */,
 				04CFD3561E601058002C67A1 /* DWQAd.jpeg in Resources */,
 				04F72C2F1E5D21C500B8BAAF /* Assets.xcassets in Resources */,
+				04CFD36E1E605CB9002C67A1 /* dwq01.jpeg in Resources */,
+				04CFD36F1E605CB9002C67A1 /* dwq02.jpeg in Resources */,
 				04F72C2D1E5D21C500B8BAAF /* Main.storyboard in Resources */,
 				04CFD2311E5F0208002C67A1 /* LICENSE in Resources */,
 				04CFD3481E6005A8002C67A1 /* 学海无涯@2x.png in Resources */,
